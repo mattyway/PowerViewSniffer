@@ -6,10 +6,6 @@
 
 #define SER_BAUDRATE                   (115200)
 
-// Copied from Powerview Hub userdata API 
-// eg: http://POWERVIEW_HUB_IP_ADDRESS/api/userdata/ and find the field labeled "rfID"
-#define RF_ID                          (0x2EC8)
-
 RFPowerView powerView(RF_CE_PIN, RF_CS_PIN, RF_IRQ_PIN, RF_ID);
 
 void processBuffer(const uint8_t*);
